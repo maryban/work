@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <QuartzCore/QuartzCore.h>
 @interface FatherViewController : UIViewController
-
-//@property (assign,nonatomic) int index;
+{
+    UIImageView *_moveImage;
+    
+    int          angle;
+    
+    NSTimer      *timer;
+    
+}
+@property (assign,nonatomic) int index;
 @end

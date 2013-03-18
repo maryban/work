@@ -11,6 +11,7 @@
 #import "LeftSideBarViewController.h"
 #import "RightSideBarViewController.h"
 
+//私有变量
 @interface SidebarViewController ()
 {
     UIViewController  *_currentMainController;
@@ -37,16 +38,16 @@ const float MoveAnimationDuration = 0.3;
     
 }
 
+//单例模式
 + (id)share
 {
     return rootViewCon;
 }
 
-
+//初始化界面的控件
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
     navBackView=[[UIView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:navBackView];
     contentView=[[UIView alloc] initWithFrame:self.view.bounds];
@@ -81,7 +82,7 @@ const float MoveAnimationDuration = 0.3;
     _panGestureReconginzer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panInContentView:)];
     [self.contentView addGestureRecognizer:_panGestureReconginzer];
 }
-
+// 添加一个手势
 - (void)contentViewAddTapGestures
 {
     //   把上一个手势清空
@@ -89,16 +90,16 @@ const float MoveAnimationDuration = 0.3;
         [self.contentView   removeGestureRecognizer:_tapGestureRecognizer];
         _tapGestureRecognizer = nil;
     }
-    //新建一个手势
+    //  新建一个手势
     _tapGestureRecognizer = [[UITapGestureRecognizer  alloc] initWithTarget:self action:@selector(tapOnContentView:)];
     [self.contentView addGestureRecognizer:_tapGestureRecognizer];
 }
-
+//点击手势
 - (void)tapOnContentView:(UITapGestureRecognizer *)tapGestureRecognizer
 {
     [self moveAnimationWithDirection:SideBarShowDirectionNone duration:MoveAnimationDuration];
 }
-
+//拖动手势
 - (void)panInContentView:(UIPanGestureRecognizer *)panGestureReconginzer
 {
     
@@ -150,7 +151,7 @@ const float MoveAnimationDuration = 0.3;
     
     
 }
-
+//导航的代理方法
 #pragma mark - nav con delegate
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
@@ -166,7 +167,7 @@ const float MoveAnimationDuration = 0.3;
     }
     
 }
-
+//控制拖拽手势的移除
 - (void)removepanGestureReconginzerWhileNavConPushed:(BOOL)push
 {
     if (push) {
@@ -182,6 +183,7 @@ const float MoveAnimationDuration = 0.3;
         }
     }
 }
+//视图控制器切换时的传值和初始化
 #pragma mark - side bar select delegate
 - (void)leftSideBarSelectWithController:(UIViewController *)controller
 {
@@ -221,7 +223,7 @@ const float MoveAnimationDuration = 0.3;
 {
     
 }
-
+//控制是左还是右视图的切换
 - (void)showSideBarControllerWithDirection:(SideBarShowDirection)direction
 {
     
@@ -240,7 +242,7 @@ const float MoveAnimationDuration = 0.3;
 }
 
 
-
+//视图之间的切换动画
 #pragma animation
 
 - (void)moveAnimationWithDirection:(SideBarShowDirection)direction duration:(float)duration
