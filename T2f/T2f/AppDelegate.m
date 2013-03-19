@@ -23,6 +23,7 @@
     SidebarViewController *sideBar=[[SidebarViewController alloc] init];
     self.window.rootViewController=sideBar;
      [sideBar release];
+    self.window.backgroundColor=[UIColor magentaColor];
     [self.window makeKeyAndVisible];
     return YES;
 }

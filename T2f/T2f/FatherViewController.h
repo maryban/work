@@ -12,7 +12,11 @@
 {
     UIImageView *_moveImage;
     
-    int          angle;
+    int          flag;
+    
+    BOOL         leftTouched;
+    
+    BOOL         rightTouched;
     
     NSTimer      *timer;
     

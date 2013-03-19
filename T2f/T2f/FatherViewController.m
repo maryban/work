@@ -8,6 +8,7 @@
 
 #import "FatherViewController.h"
 #import "SidebarViewController.h"
+#import "CountryViewController.h"
 
 @interface FatherViewController ()
 
@@ -31,14 +32,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIButton *countryBtn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    countryBtn.frame=CGRectMake(120, 220, 80, 50);
+    [countryBtn setTitle:@"选择国家" forState:UIControlStateNormal];
+    [countryBtn addTarget:self action:@selector(addCountry) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:countryBtn];
+    
+    
+    
 //  初始化控件
     UIImageView *imageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 460-50, 320, 50)];
-    imageView.image=[UIImage imageNamed:@"menu.png"];
+    imageView.image=[UIImage imageNamed:@"menu.png"];    
     [self.view addSubview:imageView];
     [imageView release];
-    
-    UIButton *leftBtn=[UIButton buttonWithType:UIButtonTypeCustom];
 
+    UIButton *leftBtn=[UIButton buttonWithType:UIButtonTypeCustom];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"菜单-n.png"] forState:UIControlStateNormal];
     [leftBtn setBackgroundImage:[UIImage imageNamed:@"菜单-d.png"] forState:UIControlStateHighlighted];
     leftBtn.frame=CGRectMake(10, imageView.frame.origin.y+10, 40, 30);
@@ -53,52 +61,121 @@
     [self.view addSubview:rightBtn];
 
     _moveImage=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"拨号_icon-n.png"]];
-    _moveImage.frame=CGRectMake(imageView.frame.size.width/2-55, imageView.frame.origin.y-2, 55, 50);
-    _moveImage.layer.anchorPoint=CGPointMake(0, 0.5);
-    [self.view addSubview:_moveImage];
-    //    定时器调用做动画
-   timer=[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
-    [self performSelector:@selector(cancelTimer) withObject:nil afterDelay:0.5];
+    _moveImage.frame=CGRectMake(132.5, 25, 55, 50);
+    _moveImage.layer.anchorPoint=CGPointMake(0.5, 1);
+    [imageView addSubview:_moveImage];
+    UIButton *menuBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+    menuBtn.frame=CGRectMake(132.5, 410, 55, 50);
+    [menuBtn addTarget:self action:@selector(beginTimer) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:menuBtn];
+    [self beginTimer];
     
+}
+//选择国家
+-(void)addCountry
+{
+    CountryViewController *country=[[CountryViewController alloc] init];
+    [self presentModalViewController:country animated:YES];
+    [country release];
+}
+
+//启动定时器  
+-(void)beginTimer
+{
+    timer=[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
+    [self performSelector:@selector(cancelTimer) withObject:nil afterDelay:0.9];
 }
 //摇晃小图标
 -(void)onTimer
 {
-    if (angle<=-30||angle>=30)
-    {
-        angle=-angle;
+        flag++;
+    int angle;
+    switch (flag) {
+        case 1:
+           angle= 0;
+            break;
+        case 2:
+           angle=-15;
+            break;
+        case 3:
+           angle= -30;
+        case 4:
+           angle=-15;
+           break;
+        case 5:
+           angle= 0;
+          break;
+        case 6:
+           angle= 15;
+         break;
+        case 7:
+          angle= 30;
+         break;
+        case 8:
+            angle= 15;
+            break;
+        case 9:
+            angle= 0;
+            break;
+        default:
+            break;
     }
-    angle +=15;
+    if (flag>=9)
+    {
+        flag=0;
+    }
     float rad=angle*(M_PI/180.0f);
     CGAffineTransform transform=CGAffineTransformMakeRotation(rad);
     [_moveImage setTransform:transform];
-    NSLog(@"angle  %d",angle);
 }
+//停掉timer
 -(void)cancelTimer
 {
     [timer invalidate];
     timer=nil;
 
 }
-#pragma mark - ibaction
+#pragma mark - btnFoundation
 
 - (void)showLeftSideBar:(id)sender
 {
     NSLog(@"左边按钮");
-    if ([[SidebarViewController share] respondsToSelector:@selector(showSideBarControllerWithDirection:)]) {
+    if (leftTouched==NO)
+    {
+      if ([[SidebarViewController share] respondsToSelector:@selector(showSideBarControllerWithDirection:)])
+      {
         [[SidebarViewController share] showSideBarControllerWithDirection:SideBarShowDirectionLeft];
+      }
     }
+   if (leftTouched==YES)
+   {
+        if ([[SidebarViewController share] respondsToSelector:@selector(showSideBarControllerWithDirection:)])
+        {
+            [[SidebarViewController share] showSideBarControllerWithDirection:SideBarShowDirectionNone];
+        }
+   }
+    leftTouched=!leftTouched;
 }
 
 - (void)showRightSideBar:(id)sender
 {
      NSLog(@"右边按钮");
-    if ([[SidebarViewController share] respondsToSelector:@selector(showSideBarControllerWithDirection:)]) {
-        [[SidebarViewController share] showSideBarControllerWithDirection:SideBarShowDirectionRight];
+    if (rightTouched==NO)
+    {
+        if ([[SidebarViewController share] respondsToSelector:@selector(showSideBarControllerWithDirection:)])
+        {
+            [[SidebarViewController share] showSideBarControllerWithDirection:SideBarShowDirectionRight];
+        }
     }
+    if (rightTouched==YES)
+    {
+        if ([[SidebarViewController share] respondsToSelector:@selector(showSideBarControllerWithDirection:)])
+        {
+            [[SidebarViewController share] showSideBarControllerWithDirection:SideBarShowDirectionNone];
+        }
+    }
+    rightTouched=!rightTouched;
 }
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

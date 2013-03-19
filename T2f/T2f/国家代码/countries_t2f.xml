@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<countries>
+
+    		<country code="HK" title="@string/HK" idd="852" />
+    	    	<country code="CN" title="@string/CN" idd="86" />
+    	    	<country code="MO" title="@string/MO" idd="853" />
+    	    		<country code="TW" title="@string/TW" idd="886" />
+    	    			<country code="US" title="@string/US" idd="1" />
+    	    			
+	<country code="AF" title="@string/AF" idd="93" />
+	<country code="AL" title="@string/AL" idd="355" />
+	<country code="AD" title="@string/AD" idd="376" />
+	<country code="AO" title="@string/AO" idd="244" />
+	<country code="AI" title="@string/AI" idd="1" />
+	<country code="AG" title="@string/AG" idd="1" />
+	<country code="AQ" title="@string/AQ" idd="672" />
+	<country code="AR" title="@string/AR" idd="54" />
+	<country code="AS" title="@string/AS" idd="1" />
+	<country code="AM" title="@string/AM" idd="374" />
+	<country code="AT" title="@string/AT" idd="43" />
+	<country code="AU" title="@string/AU" idd="61" />
+	<country code="AW" title="@string/AW" idd="297" />
+	<country code="AZ" title="@string/AZ" idd="994" />
+	<country code="BS" title="@string/BS" idd="1" />
+	<country code="BH" title="@string/BH" idd="973" />
+	<country code="BD" title="@string/BD" idd="880" />
+	<country code="BB" title="@string/BB" idd="1" />
+	<country code="BY" title="@string/BY" idd="375" local="80" />
+	<country code="BE" title="@string/BE" idd="32" />
+	<country code="BZ" title="@string/BZ" idd="501" />
+	<country code="BJ" title="@string/BJ" idd="229" />
+	<country code="BL" title="@string/BL" idd="590" />
+	<country code="BM" title="@string/BM" idd="1" /><!--1441 -->
+	<country code="BT" title="@string/BT" idd="975" />
+	<country code="BO" title="@string/BO" idd="591" />
+	<country code="BA" title="@string/BA" idd="387" />
+	<country code="BW" title="@string/BW" idd="267" />
+	<country code="BR" title="@string/BR" idd="55" />
+	<country code="VG" title="@string/VG" idd="1" /><!--1284 -->
+	<country code="BN" title="@string/BN" idd="673" />
+	<country code="BG" title="@string/BG" idd="359" />
+	<country code="BF" title="@string/BF" idd="226" />
+	<country code="MM" title="@string/MM" idd="95" />
+	<country code="BI" title="@string/BI" idd="257" />
+	<country code="KH" title="@string/KH" idd="855" />
+
+	<country code="CA" title="@string/CA" idd="1" />
+	<country code="CC" title="@string/CC" idd="61" />
+	<country code="CD" title="@string/CD" idd="243" />
+	<country code="KY" title="@string/KY" idd="1" /><!--1345 -->
+	<country code="CF" title="@string/CF" idd="236" />
+	<country code="TD" title="@string/TD" idd="235" />
+	<country code="KM" title="@string/KM" idd="269" />
+	<country code="HR" title="@string/HR" idd="385" />
+	<country code="CG" title="@string/CG" idd="242" />
+	<country code="CH" title="@string/CH" idd="41" />
+	<country code="CI" title="@string/CI" idd="225" />
+	<country code="CK" title="@string/CK" idd="682" />
+	<country code="CL" title="@string/CL" idd="56" />
+	<country code="CM" title="@string/CM" idd="237" />
+
+	<country code="CO" title="@string/CO" idd="57" />
+	<country code="CR" title="@string/CR" idd="506" />
+	<country code="CU" title="@string/CU" idd="53" />
+	<country code="CV" title="@string/CV" idd="238" />
+	<country code="CX" title="@string/CX" idd="61" />
+	<country code="CY" title="@string/CY" idd="357" />
+	<country code="CZ" title="@string/CZ" idd="420" />
+
+	<country code="DE" title="@string/DE" idd="49" />
+	<country code="DG" title="@string/DG" idd="246" />
+	<country code="DJ" title="@string/DJ" idd="253"/>
+	<country code="DK" title="@string/DK" idd="45"/>
+	<country code="DM" title="@string/DM" idd="1" /><!--1767 -->
+	<country code="DO" title="@string/DO" idd="1" /><!--1809 -->
+	<country code="DZ" title="@string/DZ" idd="213" />
+
+	<country code="EC" title="@string/EC" idd="593" />
+	<country code="EE" title="@string/EE" idd="372" />
+	<country code="EG" title="@string/EG" idd="20" />
+	<country code="SV" title="@string/SV" idd="503" />
+	<country code="GQ" title="@string/GQ" idd="240" />
+	<country code="ER" title="@string/ER" idd="291" />
+	<country code="ET" title="@string/ET" idd="251" />
+	<country code="FK" title="@string/FK" idd="500" />
+	<country code="FO" title="@string/FO" idd="298" />
+	<country code="FJ" title="@string/FJ" idd="679" />
+	<country code="FI" title="@string/FI" idd="358" />
+	<country code="FR" title="@string/FR" idd="33" />
+	<country code="PF" title="@string/PF" idd="689" />
+	<country code="GA" title="@string/GA" idd="241" />
+	<country code="GM" title="@string/GM" idd="220" />
+	<country code="GE" title="@string/GE" idd="995" />
+	<country code="GF" title="@string/GF" idd="594" />
+
+	<country code="GH" title="@string/GH" idd="233" />
+	<country code="GI" title="@string/GI" idd="350" />
+	<country code="GR" title="@string/GR" idd="30" />
+	<country code="GL" title="@string/GL" idd="299" />
+	<country code="GP" title="@string/GP" idd="590" />
+	<country code="GD" title="@string/GD" idd="1" /><!--1473 -->
+	<country code="GU" title="@string/GU" idd="1" /><!--1671 -->
+	<country code="GT" title="@string/GT" idd="502" />
+	<country code="GN" title="@string/GN" idd="224" />
+	<country code="GW" title="@string/GW" idd="245" />
+	<country code="GY" title="@string/GY" idd="592" />
+	<country code="HT" title="@string/HT" idd="509" />
+	<country code="VA" title="@string/VA" idd="39" />
+	<country code="HN" title="@string/HN" idd="504" />
+
+	<country code="HU" title="@string/HU" idd="36" />
+	<country code="IS" title="@string/IS" idd="354" />
+	<country code="IN" title="@string/IN" idd="91" />
+	<country code="ID" title="@string/ID" idd="62" />
+	<country code="IR" title="@string/IR" idd="98" />
+	<country code="IQ" title="@string/IQ" idd="964" />
+	<country code="IE" title="@string/IE" idd="353" />
+	<country code="IM" title="@string/IM" idd="44" />
+	<country code="IL" title="@string/IL" idd="972" />
+	<country code="IT" title="@string/IT" idd="39" />
+
+	<country code="JM" title="@string/JM" idd="1" /><!--1876 -->
+	<country code="JP" title="@string/JP" idd="81" />
+	<country code="JO" title="@string/JO" idd="962" />
+	<country code="KZ" title="@string/KZ" idd="7" />
+	<country code="KE" title="@string/KE" idd="254" />
+	<country code="KI" title="@string/KI" idd="686" />
+	<country code="KW" title="@string/KW" idd="965" />
+	<country code="KG" title="@string/KG" idd="996" />
+	<country code="LA" title="@string/LA" idd="856" />
+	<country code="LV" title="@string/LV" idd="371" />
+	<country code="LB" title="@string/LB" idd="961" />
+	<country code="LS" title="@string/LS" idd="266" />
+	<country code="LR" title="@string/LR" idd="231" />
+	<country code="LY" title="@string/LY" idd="218" />
+	<country code="LI" title="@string/LI" idd="423" />
+	<country code="LT" title="@string/LT" idd="370" />
+	<country code="LU" title="@string/LU" idd="352" />
+
+	<country code="MK" title="@string/MK" idd="389" />
+	<country code="MG" title="@string/MG" idd="261" />
+	<country code="MH" title="@string/MH" idd="692" />
+	<country code="MW" title="@string/MW" idd="265" />
+	<country code="MY" title="@string/MY" idd="60" />
+	<country code="MV" title="@string/MV" idd="960" />
+	<country code="ML" title="@string/ML" idd="223" />
+	<country code="MT" title="@string/MT" idd="356" />
+	<country code="MR" title="@string/MR" idd="222" />
+	<country code="MU" title="@string/MU" idd="230" />
+	<country code="YT" title="@string/YT" idd="262" />
+	<country code="MX" title="@string/MX" idd="52" />
+	<country code="FM" title="@string/FM" idd="691" />
+	<country code="MD" title="@string/MD" idd="373" />
+	<country code="MC" title="@string/MC" idd="377" />
+	<country code="MN" title="@string/MN" idd="976" />
+	<country code="ME" title="@string/ME" idd="382" />
+	<country code="MS" title="@string/MS" idd="1" /><!--1664 -->
+	<country code="MA" title="@string/MA" idd="212" />
+	<country code="MQ" title="@string/MQ" idd="596" />
+	<country code="MZ" title="@string/MZ" idd="258" />
+	<country code="NA" title="@string/NA" idd="264" />
+	<country code="NR" title="@string/NR" idd="674" />
+	<country code="NP" title="@string/NP" idd="977" />
+	<country code="NL" title="@string/NL" idd="31" />
+	<country code="AN" title="@string/AN" idd="599" />
+	<country code="NC" title="@string/NC" idd="687" />
+	<country code="NZ" title="@string/NZ" idd="64" />
+	<country code="NI" title="@string/NI" idd="505" />
+	<country code="NE" title="@string/NE" idd="227" />
+	<country code="NG" title="@string/NG" idd="234" />
+	<country code="NU" title="@string/NU" idd="683" />
+	<country code="KP" title="@string/KP" idd="850" />
+	<country code="MP" title="@string/MP" idd="1" /><!--1670 -->
+	<country code="NO" title="@string/NO" idd="47" />
+	<country code="OM" title="@string/OM" idd="968" />
+	<country code="PK" title="@string/PK" idd="92" />
+	<country code="PW" title="@string/PW" idd="680" />
+	<country code="PA" title="@string/PA" idd="507" />
+	<country code="PG" title="@string/PG" idd="675" />
+	<country code="PY" title="@string/PY" idd="595" />
+	<country code="PE" title="@string/PE" idd="51" />
+	<country code="PH" title="@string/PH" idd="63" />
+	<country code="PN" title="@string/PN" idd="870" />
+	<country code="PL" title="@string/PL" idd="48" />
+	<country code="PT" title="@string/PT" idd="351" />
+	<country code="PR" title="@string/PR" idd="1" />
+	<country code="PS" title="@string/PS" idd="970" />
+	<country code="QA" title="@string/QA" idd="974" />
+
+	<country code="RO" title="@string/RO" idd="40" />
+	<country code="RU" title="@string/RU" idd="7" />
+	<country code="RW" title="@string/RW" idd="250" />
+
+	<country code="SH" title="@string/SH" idd="290" />
+	<country code="KN" title="@string/KN" idd="1" /><!--1869 -->
+	<country code="LC" title="@string/LC" idd="1" /><!--1758 -->
+	<country code="MF" title="@string/MF" idd="599" /><!--1599 -->
+	<country code="PM" title="@string/PM" idd="508" />
+	<country code="VC" title="@string/VC" idd="1" /><!--1784 -->
+	<country code="WS" title="@string/WS" idd="685" />
+	<country code="SM" title="@string/SM" idd="378" />
+	<country code="ST" title="@string/ST" idd="239" />
+	<country code="SA" title="@string/SA" idd="966" />
+	<country code="SN" title="@string/SN" idd="221" />
+	<country code="RS" title="@string/RS" idd="381" />
+	<country code="SC" title="@string/SC" idd="248" />
+	<country code="SL" title="@string/SL" idd="232" />
+	<country code="SG" title="@string/SG" idd="65" />
+	<country code="SK" title="@string/SK" idd="421" />
+	<country code="SI" title="@string/SI" idd="386" />
+	<country code="SB" title="@string/SB" idd="677" />
+	<country code="SO" title="@string/SO" idd="252" />
+	<country code="ZA" title="@string/ZA" idd="27" />
+	<country code="KR" title="@string/KR" idd="82" />
+	<country code="ES" title="@string/ES" idd="34" />
+	<country code="LK" title="@string/LK" idd="94" />
+	<country code="SD" title="@string/SD" idd="249" />
+	<country code="SS" title="@string/SS" idd="211" />
+	<country code="SR" title="@string/SR" idd="597" />
+	<country code="SZ" title="@string/SZ" idd="268" />
+	<country code="SE" title="@string/SE" idd="46" />
+
+	<country code="SY" title="@string/SY" idd="963" />
+
+	<country code="TJ" title="@string/TJ" idd="992" />
+	<country code="TZ" title="@string/TZ" idd="255" />
+	<country code="TH" title="@string/TH" idd="66" />
+	<country code="TL" title="@string/TL" idd="670" />
+	<country code="TG" title="@string/TG" idd="228" />
+	<country code="TK" title="@string/TK" idd="690" />
+	<country code="TO" title="@string/TO" idd="676" />
+	<country code="TT" title="@string/TT" idd="1" /><!--1868 -->
+	<country code="TN" title="@string/TN" idd="216" />
+	<country code="TR" title="@string/TR" idd="90" />
+	<country code="TM" title="@string/TM" idd="993" />
+	<country code="TC" title="@string/TC" idd="1" /><!--1649 -->
+	<country code="TV" title="@string/TV" idd="688" />
+	<country code="UG" title="@string/UG" idd="256" />
+	<country code="UA" title="@string/UA" idd="380" />
+	<country code="AE" title="@string/AE" idd="971" />
+	<country code="GB" title="@string/GB" idd="44" />
+
+	<country code="UY" title="@string/UY" idd="598" />
+	<country code="VI" title="@string/VI" idd="1" /><!--1340 -->
+	<country code="UZ" title="@string/UZ" idd="998" />
+	<country code="VU" title="@string/VU" idd="678" />
+	<country code="VE" title="@string/VE" idd="58" />
+	<country code="VN" title="@string/VN" idd="84" />
+	<country code="WF" title="@string/WF" idd="681" />
+	<country code="YE" title="@string/YE" idd="967" />
+	<country code="ZM" title="@string/ZM" idd="260" />
+	<country code="ZW" title="@string/ZW" idd="263" />
+
+</countries>

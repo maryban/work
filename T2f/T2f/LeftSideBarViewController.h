@@ -11,7 +11,9 @@
 @protocol SideBarSelectDelegate ;
 
 @interface LeftSideBarViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-
+{
+    UIImageView *cellbgImage;
+}
 @property (retain,nonatomic) UITableView *mainTableView;
 @property (assign,nonatomic)id<SideBarSelectDelegate>delegate;
 @end
