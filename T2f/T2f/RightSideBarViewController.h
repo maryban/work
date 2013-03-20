@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RightSideBarViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-
+@interface RightSideBarViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
+{
+    UIImageView  *bgImage;
+    
+    UIScrollView *scroller;
+    
+    UITableView *table;
+}
 @end

@@ -87,18 +87,19 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cellbgImage=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 270, 44)];
-        [cell addSubview:cellbgImage];
-        cellbgImage.alpha=0;
-        [cellbgImage release];
+        UIImageView *img=[[UIImageView alloc] initWithFrame:CGRectMake(220, 7, 30, 30)];
+        img.tag=101;
+        [cell.contentView addSubview:img];
+        [img release];
     }
-    cellbgImage.image=[UIImage imageNamed:@"选中-t.png"];
+    UIImageView *img=(UIImageView *)[cell.contentView viewWithTag:101];
+    img.image=[UIImage imageNamed:@"箭头.png"];
     cell.imageView.image=[UIImage imageNamed:[_imgList objectAtIndex:indexPath.row]];
     cell.textLabel.textColor=[UIColor whiteColor];
     cell.textLabel.font=[UIFont systemFontOfSize:14];
     cell.textLabel.text = [_dataList objectAtIndex:indexPath.row];
-    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectedBackgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"选中-t.png"]];
+    [cell.selectedBackgroundView autorelease];
     return cell;
 }
 
@@ -106,15 +107,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:0.1];
-        cellbgImage.alpha=1;
-        [UIView commitAnimations];
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDuration:0.2];
-        cellbgImage.alpha=0;
-        [UIView commitAnimations];
-
     if ([delegate respondsToSelector:@selector(leftSideBarSelectWithController:)]) {
         if (indexPath.row == _selectIdnex) {
             [delegate leftSideBarSelectWithController:nil];

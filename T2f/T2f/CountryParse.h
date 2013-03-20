@@ -7,20 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Country.h"
 
 @interface CountryParse : NSObject<NSXMLParserDelegate>
-{
-    NSMutableString    *_result;
+{    
     
-    NSMutableString    *_contentString;
+    NSMutableArray       *_countryArray;
     
-    Country            *_country;
-   
-    NSMutableArray     *_countryArray;
 }
-@property(nonatomic,retain)Country            *country;
-@property(nonatomic,retain)NSMutableArray     *countryArray;
+@property(nonatomic,retain)NSMutableArray          *countryArray;
 
 -(void)startPrase:(NSData*)data;
 

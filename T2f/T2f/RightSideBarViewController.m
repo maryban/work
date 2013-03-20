@@ -26,42 +26,55 @@
     }
     return self;
 }
-
+-(void)dealloc
+{
+    [super dealloc];
+    [bgImage release];
+    [scroller release];
+    [table release];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//   初始化控件
+//背景初始化
+    bgImage=[[UIImageView alloc] initWithFrame:CGRectMake(0, 50, 320, 296)];
+    bgImage.image=[UIImage imageNamed:@"user_背景.png"];
+    [self.view addSubview:bgImage];
+    
     UILabel *label=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     label.text=@"个人中心";
-    label.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.9];
+    label.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:1];
     label.textColor=[UIColor whiteColor];
     label.font=[UIFont systemFontOfSize:26];
     label.textAlignment=NSTextAlignmentCenter;
     [self.view addSubview:label];
     [label release];
-    UIImageView  *bgImage=[[UIImageView alloc] initWithFrame:CGRectMake(0, 100, 320, 296)];
-    bgImage.image=[UIImage imageNamed:@"user_背景.png"];
-    [self.view addSubview:bgImage];
-    [bgImage release];
-    
-    UIView *vi=[[UIView alloc] initWithFrame:CGRectMake(0, 396, 320, 84)];
-    vi.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:1];
-    [self.view addSubview:vi];
-    [vi release];
-
-    UIScrollView *scroller=[[UIScrollView alloc] initWithFrame:CGRectMake(0, 100, 320, 346)];
+ 
+//scrollView初始化    
+    scroller=[[UIScrollView alloc] initWithFrame:CGRectMake(0, 100, 320, 400)];
     scroller.backgroundColor=[UIColor clearColor];
-    scroller.contentSize=CGSizeMake(320, 350);
+    scroller.contentSize=CGSizeMake(320, 410);
     scroller.showsVerticalScrollIndicator=NO;
+    scroller.delegate=self;
     [self.view addSubview:scroller];
-    [scroller release];
-    UITableView *table=[[UITableView alloc] initWithFrame:CGRectMake(50, 170, 270, 176)];
+    
+//表的初始化
+    UIView *vi1=[[UIView alloc] initWithFrame:CGRectMake(50, 170, 270, 400)];
+    vi1.backgroundColor=[UIColor whiteColor];
+    [scroller addSubview:vi1];
+    UIView *vi2=[[UIView alloc] initWithFrame:CGRectMake(50, 170, 270, 400)];
+    vi2.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.9];
+    [scroller addSubview:vi2];
+    [vi1 release];
+    [vi2 release];
+    
+    table=[[UITableView alloc] initWithFrame:CGRectMake(50, 170, 270, 176)];
     table.separatorColor=[UIColor colorWithWhite:0.2 alpha:0.9];
     table.delegate=self;
     table.dataSource=self;
-    table.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.9];
+    table.backgroundColor=[UIColor groupTableViewBackgroundColor];
     [scroller addSubview:table];
-    [table release];
+    
     UIImageView  *qiqiuImage=[[UIImageView alloc] initWithFrame:CGRectMake(50, table.frame.origin.y-150, 94, 170)];
     qiqiuImage.image=[UIImage imageNamed:@"user_气球.png"];
     [scroller addSubview:qiqiuImage];
@@ -70,6 +83,19 @@
     _dataList=[[NSArray alloc] initWithObjects:@"用户ID：123212122",@"点数：100点",@"消息中心", nil];
     _imgList=[[NSArray alloc] initWithObjects:@"用户ID.png",@"点数-t.png",@"消息中心.png", nil];
 }
+
+#pragma mark UIScrollerViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    if (scrollView.contentOffset.y<0&&scrollView.contentOffset.y>-50){
+        [UIView beginAnimations:nil context:nil];
+        bgImage.frame=CGRectMake(0, 50-scrollView.contentOffset.y, 320, 296);
+        [UIView setAnimationDuration:1];
+        [UIView commitAnimations];
+    }
+}
+
 
 #pragma mark - Table view data source
 
@@ -89,19 +115,26 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+
     }
+    cell.selectedBackgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"选中-t.png"]];
+    [cell.selectedBackgroundView autorelease];
     if (indexPath.row==0)
     {
 //        cell.textLabel.text=@"未登录";
     }else
     {
-    cell.imageView.image=[UIImage imageNamed:[_imgList objectAtIndex:indexPath.row-1]];
-    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = [_dataList objectAtIndex:indexPath.row-1];
+        UIImageView *img=[[UIImageView alloc] initWithFrame:CGRectMake(220, 7, 30, 30)];
+//        img.tag=102;
+        [cell.contentView addSubview:img];
+        [img release];
+//        UIImageView *img=(UIImageView *)[cell.contentView viewWithTag:102];
+        img.image=[UIImage imageNamed:@"箭头.png"];
+        cell.imageView.image=[UIImage imageNamed:[_imgList objectAtIndex:indexPath.row-1]];
+        cell.textLabel.text = [_dataList objectAtIndex:indexPath.row-1];
     }
-    cell.textLabel.textColor=[UIColor whiteColor];
-    cell.textLabel.font=[UIFont systemFontOfSize:14];
+        cell.textLabel.textColor=[UIColor whiteColor];
+        cell.textLabel.font=[UIFont systemFontOfSize:14];
    
     return cell;
 }

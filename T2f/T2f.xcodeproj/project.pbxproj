@@ -281,7 +281,6 @@
 		4496423716F867B700BA9653 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496423516F867B700BA9653 /* CountryViewController.m */; };
 		4496423816F867B700BA9653 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4496423616F867B700BA9653 /* CountryViewController.xib */; };
 		4496424816F86EF900BA9653 /* CountryParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496424716F86EF900BA9653 /* CountryParse.m */; };
-		4496425016F877C400BA9653 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496424F16F877C400BA9653 /* Country.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -571,8 +570,6 @@
 		4496423616F867B700BA9653 /* CountryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryViewController.xib; sourceTree = "<group>"; };
 		4496424616F86EF900BA9653 /* CountryParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryParse.h; sourceTree = "<group>"; };
 		4496424716F86EF900BA9653 /* CountryParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryParse.m; sourceTree = "<group>"; };
-		4496424E16F877C400BA9653 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
-		4496424F16F877C400BA9653 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -620,7 +617,6 @@
 		4403725616F6C04600E055DA /* T2f */ = {
 			isa = PBXGroup;
 			children = (
-				4496424D16F877AB00BA9653 /* Model */,
 				4496424516F86E9000BA9653 /*  Prase */,
 				4496402E16F85FB700BA9653 /* image */,
 				4403728816F6C52D00E055DA /* SideBar */,
@@ -1034,15 +1030,6 @@
 			name = " Prase";
 			sourceTree = "<group>";
 		};
-		4496424D16F877AB00BA9653 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				4496424E16F877C400BA9653 /* Country.h */,
-				4496424F16F877C400BA9653 /* Country.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1375,7 +1362,6 @@
 				4403728616F6C48A00E055DA /* FatherViewController.m in Sources */,
 				4496423716F867B700BA9653 /* CountryViewController.m in Sources */,
 				4496424816F86EF900BA9653 /* CountryParse.m in Sources */,
-				4496425016F877C400BA9653 /* Country.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

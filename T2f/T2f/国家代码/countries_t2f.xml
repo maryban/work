@@ -1,254 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
 <countries>
 
-    		<country code="HK" title="@string/HK" idd="852" />
-    	    	<country code="CN" title="@string/CN" idd="86" />
-    	    	<country code="MO" title="@string/MO" idd="853" />
-    	    		<country code="TW" title="@string/TW" idd="886" />
-    	    			<country code="US" title="@string/US" idd="1" />
+    		<country code="HK" title="中国香港特别行政区" idd="852" />
+    	    	<country code="CN" title="中国" idd="86" />
+    	    	<country code="MO" title="中国澳门特别行政区" idd="853" />
+    	    		<country code="TW" title="台湾" idd="886" />
+    	    			<country code="US" title="美国" idd="1" />
     	    			
-	<country code="AF" title="@string/AF" idd="93" />
-	<country code="AL" title="@string/AL" idd="355" />
-	<country code="AD" title="@string/AD" idd="376" />
-	<country code="AO" title="@string/AO" idd="244" />
-	<country code="AI" title="@string/AI" idd="1" />
-	<country code="AG" title="@string/AG" idd="1" />
-	<country code="AQ" title="@string/AQ" idd="672" />
-	<country code="AR" title="@string/AR" idd="54" />
-	<country code="AS" title="@string/AS" idd="1" />
-	<country code="AM" title="@string/AM" idd="374" />
-	<country code="AT" title="@string/AT" idd="43" />
-	<country code="AU" title="@string/AU" idd="61" />
-	<country code="AW" title="@string/AW" idd="297" />
-	<country code="AZ" title="@string/AZ" idd="994" />
-	<country code="BS" title="@string/BS" idd="1" />
-	<country code="BH" title="@string/BH" idd="973" />
-	<country code="BD" title="@string/BD" idd="880" />
-	<country code="BB" title="@string/BB" idd="1" />
-	<country code="BY" title="@string/BY" idd="375" local="80" />
-	<country code="BE" title="@string/BE" idd="32" />
-	<country code="BZ" title="@string/BZ" idd="501" />
-	<country code="BJ" title="@string/BJ" idd="229" />
-	<country code="BL" title="@string/BL" idd="590" />
-	<country code="BM" title="@string/BM" idd="1" /><!--1441 -->
-	<country code="BT" title="@string/BT" idd="975" />
-	<country code="BO" title="@string/BO" idd="591" />
-	<country code="BA" title="@string/BA" idd="387" />
-	<country code="BW" title="@string/BW" idd="267" />
-	<country code="BR" title="@string/BR" idd="55" />
-	<country code="VG" title="@string/VG" idd="1" /><!--1284 -->
-	<country code="BN" title="@string/BN" idd="673" />
-	<country code="BG" title="@string/BG" idd="359" />
-	<country code="BF" title="@string/BF" idd="226" />
-	<country code="MM" title="@string/MM" idd="95" />
-	<country code="BI" title="@string/BI" idd="257" />
-	<country code="KH" title="@string/KH" idd="855" />
+	<country code="AF" title="阿富汗" idd="93" />
+	<country code="AL" title="阿尔巴尼亚" idd="355" />
+	<country code="AD" title="安道尔" idd="376" />
+	<country code="AO" title="安哥拉" idd="244" />
+	<country code="AI" title="安圭拉" idd="1" />
+	<country code="AG" title="安提瓜和巴布达" idd="1" />
+	<country code="AQ" title="南极洲" idd="672" />
+	<country code="AR" title="阿根廷" idd="54" />
+	<country code="AS" title="美属萨摩亚" idd="1" />
+	<country code="AM" title="亚美尼亚" idd="374" />
+	<country code="AT" title="奥地利" idd="43" />
+	<country code="AU" title="澳大利亚" idd="61" />
+	<country code="AW" title="阿鲁巴" idd="297" />
+	<country code="AZ" title="阿塞拜疆" idd="994" />
+	<country code="BS" title="巴哈马" idd="1" />
+	<country code="BH" title="巴林" idd="973" />
+	<country code="BD" title="孟加拉国" idd="880" />
+	<country code="BB" title="巴巴多斯" idd="1" />
+	<country code="BY" title="白俄罗斯" idd="375" local="80" />
+	<country code="BE" title="比利时" idd="32" />
+	<country code="BZ" title="伯利兹" idd="501" />
+	<country code="BJ" title="贝宁" idd="229" />
+	<country code="BL" title="圣巴泰勒米" idd="590" />
+	<country code="BM" title="百慕大" idd="1" /><!--1441 -->
+	<country code="BT" title="不丹" idd="975" />
+	<country code="BO" title="玻利维亚" idd="591" />
+	<country code="BA" title="波斯尼亚和黑塞哥维那" idd="387" />
+	<country code="BW" title="博茨瓦纳" idd="267" />
+	<country code="BR" title="巴西" idd="55" />
+	<country code="VG" title="英属维京群岛" idd="1" /><!--1284 -->
+	<country code="BN" title="文莱" idd="673" />
+	<country code="BG" title="保加利亚" idd="359" />
+	<country code="BF" title="布基纳法索 Faso" idd="226" />
+	<country code="MM" title="缅甸" idd="95" />
+	<country code="BI" title="布隆迪" idd="257" />
+	<country code="KH" title="柬埔寨" idd="855" />
 
-	<country code="CA" title="@string/CA" idd="1" />
-	<country code="CC" title="@string/CC" idd="61" />
-	<country code="CD" title="@string/CD" idd="243" />
-	<country code="KY" title="@string/KY" idd="1" /><!--1345 -->
-	<country code="CF" title="@string/CF" idd="236" />
-	<country code="TD" title="@string/TD" idd="235" />
-	<country code="KM" title="@string/KM" idd="269" />
-	<country code="HR" title="@string/HR" idd="385" />
-	<country code="CG" title="@string/CG" idd="242" />
-	<country code="CH" title="@string/CH" idd="41" />
-	<country code="CI" title="@string/CI" idd="225" />
-	<country code="CK" title="@string/CK" idd="682" />
-	<country code="CL" title="@string/CL" idd="56" />
-	<country code="CM" title="@string/CM" idd="237" />
+	<country code="CA" title="加拿大" idd="1" />
+	<country code="CC" title="科科斯群岛" idd="61" />
+	<country code="CD" title="刚果民主共和国" idd="243" />
+	<country code="KY" title="开曼群岛" idd="1" /><!--1345 -->
+	<country code="CF" title="中非共和国" idd="236" />
+	<country code="TD" title="乍得" idd="235" />
+	<country code="KM" title="科摩罗" idd="269" />
+	<country code="HR" title="克罗地亚" idd="385" />
+	<country code="CG" title="刚果（布）" idd="242" />
+	<country code="CH" title="瑞士" idd="41" />
+	<country code="CI" title="科特迪瓦" idd="225" />
+	<country code="CK" title="库克群岛" idd="682" />
+	<country code="CL" title="智利" idd="56" />
+	<country code="CM" title="喀麦隆" idd="237" />
 
-	<country code="CO" title="@string/CO" idd="57" />
-	<country code="CR" title="@string/CR" idd="506" />
-	<country code="CU" title="@string/CU" idd="53" />
-	<country code="CV" title="@string/CV" idd="238" />
-	<country code="CX" title="@string/CX" idd="61" />
-	<country code="CY" title="@string/CY" idd="357" />
-	<country code="CZ" title="@string/CZ" idd="420" />
+	<country code="CO" title="哥伦比亚" idd="57" />
+	<country code="CR" title="哥斯达黎加" idd="506" />
+	<country code="CU" title="古巴" idd="53" />
+	<country code="CV" title="佛得角" idd="238" />
+	<country code="CX" title="圣诞岛" idd="61" />
+	<country code="CY" title="塞浦路斯" idd="357" />
+	<country code="CZ" title="捷克共和国" idd="420" />
 
-	<country code="DE" title="@string/DE" idd="49" />
-	<country code="DG" title="@string/DG" idd="246" />
-	<country code="DJ" title="@string/DJ" idd="253"/>
-	<country code="DK" title="@string/DK" idd="45"/>
-	<country code="DM" title="@string/DM" idd="1" /><!--1767 -->
-	<country code="DO" title="@string/DO" idd="1" /><!--1809 -->
-	<country code="DZ" title="@string/DZ" idd="213" />
+	<country code="DE" title="德国" idd="49" />
+	<country code="DG" title="迪戈加西亚" idd="246" />
+	<country code="DJ" title="吉布提" idd="253"/>
+	<country code="DK" title="丹麦" idd="45"/>
+	<country code="DM" title="多米尼加" idd="1" /><!--1767 -->
+	<country code="DO" title="多米尼加共和国" idd="1" /><!--1809 -->
+	<country code="DZ" title="阿尔及利亚" idd="213" />
 
-	<country code="EC" title="@string/EC" idd="593" />
-	<country code="EE" title="@string/EE" idd="372" />
-	<country code="EG" title="@string/EG" idd="20" />
-	<country code="SV" title="@string/SV" idd="503" />
-	<country code="GQ" title="@string/GQ" idd="240" />
-	<country code="ER" title="@string/ER" idd="291" />
-	<country code="ET" title="@string/ET" idd="251" />
-	<country code="FK" title="@string/FK" idd="500" />
-	<country code="FO" title="@string/FO" idd="298" />
-	<country code="FJ" title="@string/FJ" idd="679" />
-	<country code="FI" title="@string/FI" idd="358" />
-	<country code="FR" title="@string/FR" idd="33" />
-	<country code="PF" title="@string/PF" idd="689" />
-	<country code="GA" title="@string/GA" idd="241" />
-	<country code="GM" title="@string/GM" idd="220" />
-	<country code="GE" title="@string/GE" idd="995" />
-	<country code="GF" title="@string/GF" idd="594" />
+	<country code="EC" title="厄瓜多尔" idd="593" />
+	<country code="EE" title="爱沙尼亚" idd="372" />
+	<country code="EG" title="埃及" idd="20" />
+	<country code="SV" title="萨尔瓦多" idd="503" />
+	<country code="GQ" title="赤道几内亚" idd="240" />
+	<country code="ER" title="厄立特里亚" idd="291" />
+	<country code="ET" title="埃塞俄比亚" idd="251" />
+	<country code="FK" title="福克兰群岛" idd="500" />
+	<country code="FO" title="法罗群岛" idd="298" />
+	<country code="FJ" title="斐济" idd="679" />
+	<country code="FI" title="芬兰" idd="358" />
+	<country code="FR" title="法国" idd="33" />
+	<country code="PF" title="法属波利尼西亚" idd="689" />
+	<country code="GA" title="加蓬" idd="241" />
+	<country code="GM" title="冈比亚" idd="220" />
+	<country code="GE" title="格鲁吉亚" idd="995" />
+	<country code="GF" title="法属圭亚那" idd="594" />
 
-	<country code="GH" title="@string/GH" idd="233" />
-	<country code="GI" title="@string/GI" idd="350" />
-	<country code="GR" title="@string/GR" idd="30" />
-	<country code="GL" title="@string/GL" idd="299" />
-	<country code="GP" title="@string/GP" idd="590" />
-	<country code="GD" title="@string/GD" idd="1" /><!--1473 -->
-	<country code="GU" title="@string/GU" idd="1" /><!--1671 -->
-	<country code="GT" title="@string/GT" idd="502" />
-	<country code="GN" title="@string/GN" idd="224" />
-	<country code="GW" title="@string/GW" idd="245" />
-	<country code="GY" title="@string/GY" idd="592" />
-	<country code="HT" title="@string/HT" idd="509" />
-	<country code="VA" title="@string/VA" idd="39" />
-	<country code="HN" title="@string/HN" idd="504" />
+	<country code="GH" title="加纳" idd="233" />
+	<country code="GI" title="直布罗陀" idd="350" />
+	<country code="GR" title="希腊" idd="30" />
+	<country code="GL" title="格陵兰" idd="299" />
+	<country code="GP" title="瓜德罗普岛" idd="590" />
+	<country code="GD" title="格林纳达" idd="1" /><!--1473 -->
+	<country code="GU" title="关岛" idd="1" /><!--1671 -->
+	<country code="GT" title="危地马拉" idd="502" />
+	<country code="GN" title="几内亚" idd="224" />
+	<country code="GW" title="几内亚比绍" idd="245" />
+	<country code="GY" title="圭亚那" idd="592" />
+	<country code="HT" title="海地" idd="509" />
+	<country code="VA" title="梵蒂冈" idd="39" />
+	<country code="HN" title="洪都拉斯" idd="504" />
 
-	<country code="HU" title="@string/HU" idd="36" />
-	<country code="IS" title="@string/IS" idd="354" />
-	<country code="IN" title="@string/IN" idd="91" />
-	<country code="ID" title="@string/ID" idd="62" />
-	<country code="IR" title="@string/IR" idd="98" />
-	<country code="IQ" title="@string/IQ" idd="964" />
-	<country code="IE" title="@string/IE" idd="353" />
-	<country code="IM" title="@string/IM" idd="44" />
-	<country code="IL" title="@string/IL" idd="972" />
-	<country code="IT" title="@string/IT" idd="39" />
+	<country code="HU" title="匈牙利" idd="36" />
+	<country code="IS" title="冰岛" idd="354" />
+	<country code="IN" title="印度" idd="91" />
+	<country code="ID" title="印度尼西亚" idd="62" />
+	<country code="IR" title="伊朗" idd="98" />
+	<country code="IQ" title="伊拉克" idd="964" />
+	<country code="IE" title="爱尔兰" idd="353" />
+	<country code="IM" title="马恩岛" idd="44" />
+	<country code="IL" title="以色列" idd="972" />
+	<country code="IT" title="意大利" idd="39" />
 
-	<country code="JM" title="@string/JM" idd="1" /><!--1876 -->
-	<country code="JP" title="@string/JP" idd="81" />
-	<country code="JO" title="@string/JO" idd="962" />
-	<country code="KZ" title="@string/KZ" idd="7" />
-	<country code="KE" title="@string/KE" idd="254" />
-	<country code="KI" title="@string/KI" idd="686" />
-	<country code="KW" title="@string/KW" idd="965" />
-	<country code="KG" title="@string/KG" idd="996" />
-	<country code="LA" title="@string/LA" idd="856" />
-	<country code="LV" title="@string/LV" idd="371" />
-	<country code="LB" title="@string/LB" idd="961" />
-	<country code="LS" title="@string/LS" idd="266" />
-	<country code="LR" title="@string/LR" idd="231" />
-	<country code="LY" title="@string/LY" idd="218" />
-	<country code="LI" title="@string/LI" idd="423" />
-	<country code="LT" title="@string/LT" idd="370" />
-	<country code="LU" title="@string/LU" idd="352" />
+	<country code="JM" title="牙买加" idd="1" /><!--1876 -->
+	<country code="JP" title="日本" idd="81" />
+	<country code="JO" title="约旦" idd="962" />
+	<country code="KZ" title="哈萨克斯坦" idd="7" />
+	<country code="KE" title="肯尼亚" idd="254" />
+	<country code="KI" title="基里巴斯" idd="686" />
+	<country code="KW" title="科威特" idd="965" />
+	<country code="KG" title="吉尔吉斯斯坦" idd="996" />
+	<country code="LA" title="老挝人民民主共和国" idd="856" />
+	<country code="LV" title="拉脱维亚" idd="371" />
+	<country code="LB" title="黎巴嫩" idd="961" />
+	<country code="LS" title="莱索托" idd="266" />
+	<country code="LR" title="利比里亚" idd="231" />
+	<country code="LY" title="利比亚" idd="218" />
+	<country code="LI" title="列支敦士登" idd="423" />
+	<country code="LT" title="立陶宛" idd="370" />
+	<country code="LU" title="卢森堡" idd="352" />
 
-	<country code="MK" title="@string/MK" idd="389" />
-	<country code="MG" title="@string/MG" idd="261" />
-	<country code="MH" title="@string/MH" idd="692" />
-	<country code="MW" title="@string/MW" idd="265" />
-	<country code="MY" title="@string/MY" idd="60" />
-	<country code="MV" title="@string/MV" idd="960" />
-	<country code="ML" title="@string/ML" idd="223" />
-	<country code="MT" title="@string/MT" idd="356" />
-	<country code="MR" title="@string/MR" idd="222" />
-	<country code="MU" title="@string/MU" idd="230" />
-	<country code="YT" title="@string/YT" idd="262" />
-	<country code="MX" title="@string/MX" idd="52" />
-	<country code="FM" title="@string/FM" idd="691" />
-	<country code="MD" title="@string/MD" idd="373" />
-	<country code="MC" title="@string/MC" idd="377" />
-	<country code="MN" title="@string/MN" idd="976" />
-	<country code="ME" title="@string/ME" idd="382" />
-	<country code="MS" title="@string/MS" idd="1" /><!--1664 -->
-	<country code="MA" title="@string/MA" idd="212" />
-	<country code="MQ" title="@string/MQ" idd="596" />
-	<country code="MZ" title="@string/MZ" idd="258" />
-	<country code="NA" title="@string/NA" idd="264" />
-	<country code="NR" title="@string/NR" idd="674" />
-	<country code="NP" title="@string/NP" idd="977" />
-	<country code="NL" title="@string/NL" idd="31" />
-	<country code="AN" title="@string/AN" idd="599" />
-	<country code="NC" title="@string/NC" idd="687" />
-	<country code="NZ" title="@string/NZ" idd="64" />
-	<country code="NI" title="@string/NI" idd="505" />
-	<country code="NE" title="@string/NE" idd="227" />
-	<country code="NG" title="@string/NG" idd="234" />
-	<country code="NU" title="@string/NU" idd="683" />
-	<country code="KP" title="@string/KP" idd="850" />
-	<country code="MP" title="@string/MP" idd="1" /><!--1670 -->
-	<country code="NO" title="@string/NO" idd="47" />
-	<country code="OM" title="@string/OM" idd="968" />
-	<country code="PK" title="@string/PK" idd="92" />
-	<country code="PW" title="@string/PW" idd="680" />
-	<country code="PA" title="@string/PA" idd="507" />
-	<country code="PG" title="@string/PG" idd="675" />
-	<country code="PY" title="@string/PY" idd="595" />
-	<country code="PE" title="@string/PE" idd="51" />
-	<country code="PH" title="@string/PH" idd="63" />
-	<country code="PN" title="@string/PN" idd="870" />
-	<country code="PL" title="@string/PL" idd="48" />
-	<country code="PT" title="@string/PT" idd="351" />
-	<country code="PR" title="@string/PR" idd="1" />
-	<country code="PS" title="@string/PS" idd="970" />
-	<country code="QA" title="@string/QA" idd="974" />
+	<country code="MK" title="马其顿" idd="389" />
+	<country code="MG" title="马达加斯加" idd="261" />
+	<country code="MH" title="马绍尔群岛" idd="692" />
+	<country code="MW" title="马拉维" idd="265" />
+	<country code="MY" title="马来西亚" idd="60" />
+	<country code="MV" title="马尔代夫" idd="960" />
+	<country code="ML" title="马里" idd="223" />
+	<country code="MT" title="马耳他" idd="356" />
+	<country code="MR" title="毛里塔尼亚" idd="222" />
+	<country code="MU" title="毛里求斯" idd="230" />
+	<country code="YT" title="马约特" idd="262" />
+	<country code="MX" title="墨西哥" idd="52" />
+	<country code="FM" title="密克罗尼西亚联邦" idd="691" />
+	<country code="MD" title="摩尔多瓦" idd="373" />
+	<country code="MC" title="摩纳哥" idd="377" />
+	<country code="MN" title="蒙古" idd="976" />
+	<country code="ME" title="黑山" idd="382" />
+	<country code="MS" title="蒙塞拉特群岛" idd="1" /><!--1664 -->
+	<country code="MA" title="摩洛哥" idd="212" />
+	<country code="MQ" title="马提尼克群岛" idd="596" />
+	<country code="MZ" title="莫桑比克" idd="258" />
+	<country code="NA" title="纳米比亚" idd="264" />
+	<country code="NR" title="瑙鲁" idd="674" />
+	<country code="NP" title="尼泊尔" idd="977" />
+	<country code="NL" title="荷兰" idd="31" />
+	<country code="AN" title="荷属安的列斯群岛" idd="599" />
+	<country code="NC" title="新喀里多尼亚" idd="687" />
+	<country code="NZ" title="新西兰" idd="64" />
+	<country code="NI" title="尼加拉瓜" idd="505" />
+	<country code="NE" title="尼日尔" idd="227" />
+	<country code="NG" title="尼日利亚" idd="234" />
+	<country code="NU" title="纽埃" idd="683" />
+	<country code="KP" title="朝鲜" idd="850" />
+	<country code="MP" title="北马里亚纳群岛" idd="1" /><!--1670 -->
+	<country code="NO" title="挪威" idd="47" />
+	<country code="OM" title="阿曼" idd="968" />
+	<country code="PK" title="巴基斯坦" idd="92" />
+	<country code="PW" title="帕劳" idd="680" />
+	<country code="PA" title="巴拿马" idd="507" />
+	<country code="PG" title="巴布亚新几内亚" idd="675" />
+	<country code="PY" title="巴拉圭" idd="595" />
+	<country code="PE" title="秘鲁" idd="51" />
+	<country code="PH" title="菲律宾" idd="63" />
+	<country code="PN" title="皮特凯恩群岛" idd="870" />
+	<country code="PL" title="波兰" idd="48" />
+	<country code="PT" title="葡萄牙" idd="351" />
+	<country code="PR" title="波多黎各" idd="1" />
+	<country code="PS" title="巴勒斯坦领土" idd="970" />
+	<country code="QA" title="卡塔尔" idd="974" />
 
-	<country code="RO" title="@string/RO" idd="40" />
-	<country code="RU" title="@string/RU" idd="7" />
-	<country code="RW" title="@string/RW" idd="250" />
+	<country code="RO" title="罗马尼亚" idd="40" />
+	<country code="RU" title="俄罗斯" idd="7" />
+	<country code="RW" title="卢旺达" idd="250" />
 
-	<country code="SH" title="@string/SH" idd="290" />
-	<country code="KN" title="@string/KN" idd="1" /><!--1869 -->
-	<country code="LC" title="@string/LC" idd="1" /><!--1758 -->
-	<country code="MF" title="@string/MF" idd="599" /><!--1599 -->
-	<country code="PM" title="@string/PM" idd="508" />
-	<country code="VC" title="@string/VC" idd="1" /><!--1784 -->
-	<country code="WS" title="@string/WS" idd="685" />
-	<country code="SM" title="@string/SM" idd="378" />
-	<country code="ST" title="@string/ST" idd="239" />
-	<country code="SA" title="@string/SA" idd="966" />
-	<country code="SN" title="@string/SN" idd="221" />
-	<country code="RS" title="@string/RS" idd="381" />
-	<country code="SC" title="@string/SC" idd="248" />
-	<country code="SL" title="@string/SL" idd="232" />
-	<country code="SG" title="@string/SG" idd="65" />
-	<country code="SK" title="@string/SK" idd="421" />
-	<country code="SI" title="@string/SI" idd="386" />
-	<country code="SB" title="@string/SB" idd="677" />
-	<country code="SO" title="@string/SO" idd="252" />
-	<country code="ZA" title="@string/ZA" idd="27" />
-	<country code="KR" title="@string/KR" idd="82" />
-	<country code="ES" title="@string/ES" idd="34" />
-	<country code="LK" title="@string/LK" idd="94" />
-	<country code="SD" title="@string/SD" idd="249" />
-	<country code="SS" title="@string/SS" idd="211" />
-	<country code="SR" title="@string/SR" idd="597" />
-	<country code="SZ" title="@string/SZ" idd="268" />
-	<country code="SE" title="@string/SE" idd="46" />
+	<country code="SH" title="新加坡" idd="290" />
+	<country code="KN" title="圣基茨和尼维斯" idd="1" /><!--1869 -->
+	<country code="LC" title="圣卢西亚" idd="1" /><!--1758 -->
+	<country code="MF" title="圣马丁" idd="599" /><!--1599 -->
+	<country code="PM" title="圣皮埃尔和密克隆" idd="508" />
+	<country code="VC" title="@圣文森特和格林纳丁斯" idd="1" /><!--1784 -->
+	<country code="WS" title="萨摩亚" idd="685" />
+	<country code="SM" title="圣马力诺" idd="378" />
+	<country code="ST" title="圣多美和普林西比" idd="239" />
+	<country code="SA" title="沙特阿拉伯" idd="966" />
+	<country code="SN" title="塞内加尔" idd="221" />
+	<country code="RS" title="塞尔维亚" idd="381" />
+	<country code="SC" title="塞舌尔群岛" idd="248" />
+	<country code="SL" title="塞拉利昂" idd="232" />
+	<country code="SG" title="新加坡" idd="65" />
+	<country code="SK" title="斯洛伐克" idd="421" />
+	<country code="SI" title="斯洛文尼亚" idd="386" />
+	<country code="SB" title="所罗门群岛" idd="677" />
+	<country code="SO" title="索马里" idd="252" />
+	<country code="ZA" title="南非" idd="27" />
+	<country code="KR" title="韩国" idd="82" />
+	<country code="ES" title="西班牙" idd="34" />
+	<country code="LK" title="斯里兰卡" idd="94" />
+	<country code="SD" title="苏丹" idd="249" />
+	<country code="SS" title="苏丹南部" idd="211" />
+	<country code="SR" title="苏里南" idd="597" />
+	<country code="SZ" title="斯威士兰" idd="268" />
+	<country code="SE" title="瑞典" idd="46" />
 
-	<country code="SY" title="@string/SY" idd="963" />
+	<country code="SY" title="叙利亚" idd="963" />
 
-	<country code="TJ" title="@string/TJ" idd="992" />
-	<country code="TZ" title="@string/TZ" idd="255" />
-	<country code="TH" title="@string/TH" idd="66" />
-	<country code="TL" title="@string/TL" idd="670" />
-	<country code="TG" title="@string/TG" idd="228" />
-	<country code="TK" title="@string/TK" idd="690" />
-	<country code="TO" title="@string/TO" idd="676" />
-	<country code="TT" title="@string/TT" idd="1" /><!--1868 -->
-	<country code="TN" title="@string/TN" idd="216" />
-	<country code="TR" title="@string/TR" idd="90" />
-	<country code="TM" title="@string/TM" idd="993" />
-	<country code="TC" title="@string/TC" idd="1" /><!--1649 -->
-	<country code="TV" title="@string/TV" idd="688" />
-	<country code="UG" title="@string/UG" idd="256" />
-	<country code="UA" title="@string/UA" idd="380" />
-	<country code="AE" title="@string/AE" idd="971" />
-	<country code="GB" title="@string/GB" idd="44" />
+	<country code="TJ" title="塔吉克斯坦" idd="992" />
+	<country code="TZ" title="坦桑尼亚" idd="255" />
+	<country code="TH" title="泰国" idd="66" />
+	<country code="TL" title="东帝汶" idd="670" />
+	<country code="TG" title="多哥" idd="228" />
+	<country code="TK" title="托克劳" idd="690" />
+	<country code="TO" title="汤加" idd="676" />
+	<country code="TT" title="特立尼达和多巴哥" idd="1" /><!--1868 -->
+	<country code="TN" title="突尼斯" idd="216" />
+	<country code="TR" title="土耳其" idd="90" />
+	<country code="TM" title="土库曼斯坦" idd="993" />
+	<country code="TC" title="特克斯和凯科斯群岛" idd="1" /><!--1649 -->
+	<country code="TV" title="图瓦卢" idd="688" />
+	<country code="UG" title="乌干达" idd="256" />
+	<country code="UA" title="乌克兰" idd="380" />
+	<country code="AE" title="阿拉伯联合酋长国" idd="971" />
+	<country code="GB" title="英国" idd="44" />
 
-	<country code="UY" title="@string/UY" idd="598" />
-	<country code="VI" title="@string/VI" idd="1" /><!--1340 -->
-	<country code="UZ" title="@string/UZ" idd="998" />
-	<country code="VU" title="@string/VU" idd="678" />
-	<country code="VE" title="@string/VE" idd="58" />
-	<country code="VN" title="@string/VN" idd="84" />
-	<country code="WF" title="@string/WF" idd="681" />
-	<country code="YE" title="@string/YE" idd="967" />
-	<country code="ZM" title="@string/ZM" idd="260" />
-	<country code="ZW" title="@string/ZW" idd="263" />
+	<country code="UY" title="乌拉圭" idd="598" />
+	<country code="VI" title="美属维京群岛" idd="1" /><!--1340 -->
+	<country code="UZ" title="乌兹别克斯坦" idd="998" />
+	<country code="VU" title="瓦努阿图" idd="678" />
+	<country code="VE" title="委内瑞拉" idd="58" />
+	<country code="VN" title="越南" idd="84" />
+	<country code="WF" title="瓦利斯和富图纳" idd="681" />
+	<country code="YE" title="也门" idd="967" />
+	<country code="ZM" title="赞比亚" idd="260" />
+	<country code="ZW" title="津巴布韦" idd="263" />
 
 </countries>

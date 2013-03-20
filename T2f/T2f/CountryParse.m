@@ -9,7 +9,8 @@
 #import "CountryParse.h"
 
 @implementation CountryParse
-@synthesize country=_country,countryArray=_countryArray;
+@synthesize countryArray=_countryArray;
+
 -(void)startPrase:(NSData*)data
 {
 	NSXMLParser *xmlPrase=[[NSXMLParser alloc] initWithData:data];
@@ -24,43 +25,35 @@
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser
 {
-	_contentString=[[NSMutableString alloc] initWithCapacity:0];
+    NSLog(@"开始解析了");
+    self.countryArray=[[NSMutableArray alloc] initWithCapacity:0];
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
-	//清空可辨字符串
-	[_contentString setString:@""];
+     NSLog(@"解析已经发现了标签");
+    if ([elementName isEqualToString:@"country"])
+    {
+        [self.countryArray addObject:attributeDict];
+    }
+    NSLog(@"字典数据shi %@",self.countryArray);
 }
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
-{
-	
-	[_contentString appendString:string];
-	
+{	
+	NSLog(@"发现了标签里的内容");
 }
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
-	if ([elementName isEqualToString:@"code"])
-	{
-		self.country.code=_contentString;
-	}
-    else if ([elementName isEqualToString:@"name"])
-	{
-		self.country.name=_contentString;
-	}
-    else if ([elementName isEqualToString:@"idd"])
-	{
-		self.country.idd=_contentString;
-	}
-    [self.countryArray addObject:self.country];
+    NSLog(@"解析到了尾标签");
+
 }
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
-	
+	NSLog(@"解析结束");
 }
 -(void)dealloc
 {
-	[_contentString release];
+    [_countryArray release];
 	[super dealloc];
 }
 

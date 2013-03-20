@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface CountryViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-
+{
+    NSArray      *_listArray;
+    UITableView  *table;
+    NSString     *_num;
+}
+@property(nonatomic,retain)NSArray      *listArray;
+@property(nonatomic,retain)NSString     *num;
 @end
