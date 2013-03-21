@@ -24,6 +24,11 @@
 		4403728216F6C3EE00E055DA /* RightSideBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4403728016F6C3EE00E055DA /* RightSideBarViewController.xib */; };
 		4403728616F6C48A00E055DA /* FatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4403728416F6C48A00E055DA /* FatherViewController.m */; };
 		4403728716F6C48A00E055DA /* FatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4403728516F6C48A00E055DA /* FatherViewController.xib */; };
+		4428ECD416FA95B200B2CCE9 /* TBXML+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 4428ECCF16FA95B200B2CCE9 /* TBXML+Compression.m */; };
+		4428ECD516FA95B200B2CCE9 /* TBXML+HTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 4428ECD116FA95B200B2CCE9 /* TBXML+HTTP.m */; };
+		4428ECD616FA95B200B2CCE9 /* TBXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4428ECD316FA95B200B2CCE9 /* TBXML.m */; };
+		4428ECD916FA965900B2CCE9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4428ECD816FA965900B2CCE9 /* libz.dylib */; };
+		4428ECDF16FAA2B300B2CCE9 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 4428ECDE16FAA2B300B2CCE9 /* Country.m */; };
 		4496402A16F85FA800BA9653 /* countries_t2f.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4496402616F85FA800BA9653 /* countries_t2f.xml */; };
 		4496402B16F85FA800BA9653 /* strings-CN.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4496402716F85FA800BA9653 /* strings-CN.xml */; };
 		4496402C16F85FA800BA9653 /* strings-tw.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4496402816F85FA800BA9653 /* strings-tw.xml */; };
@@ -280,7 +285,6 @@
 		4496422E16F85FB800BA9653 /* 非渐变绿色点击状态色值.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4496413416F85FB700BA9653 /* 非渐变绿色点击状态色值.jpg */; };
 		4496423716F867B700BA9653 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496423516F867B700BA9653 /* CountryViewController.m */; };
 		4496423816F867B700BA9653 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4496423616F867B700BA9653 /* CountryViewController.xib */; };
-		4496424816F86EF900BA9653 /* CountryParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4496424716F86EF900BA9653 /* CountryParse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -310,6 +314,15 @@
 		4403728316F6C48A00E055DA /* FatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatherViewController.h; sourceTree = "<group>"; };
 		4403728416F6C48A00E055DA /* FatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatherViewController.m; sourceTree = "<group>"; };
 		4403728516F6C48A00E055DA /* FatherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FatherViewController.xib; sourceTree = "<group>"; };
+		4428ECCE16FA95B200B2CCE9 /* TBXML+Compression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+Compression.h"; sourceTree = "<group>"; };
+		4428ECCF16FA95B200B2CCE9 /* TBXML+Compression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+Compression.m"; sourceTree = "<group>"; };
+		4428ECD016FA95B200B2CCE9 /* TBXML+HTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TBXML+HTTP.h"; sourceTree = "<group>"; };
+		4428ECD116FA95B200B2CCE9 /* TBXML+HTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TBXML+HTTP.m"; sourceTree = "<group>"; };
+		4428ECD216FA95B200B2CCE9 /* TBXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBXML.h; sourceTree = "<group>"; };
+		4428ECD316FA95B200B2CCE9 /* TBXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBXML.m; sourceTree = "<group>"; };
+		4428ECD816FA965900B2CCE9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4428ECDD16FAA2B300B2CCE9 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		4428ECDE16FAA2B300B2CCE9 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
 		446DE98516F705B900C5D242 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4496402616F85FA800BA9653 /* countries_t2f.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = countries_t2f.xml; path = "国家代码/countries_t2f.xml"; sourceTree = "<group>"; };
 		4496402716F85FA800BA9653 /* strings-CN.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "strings-CN.xml"; path = "国家代码/strings-CN.xml"; sourceTree = "<group>"; };
@@ -568,8 +581,6 @@
 		4496423416F867B700BA9653 /* CountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryViewController.h; sourceTree = "<group>"; };
 		4496423516F867B700BA9653 /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
 		4496423616F867B700BA9653 /* CountryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryViewController.xib; sourceTree = "<group>"; };
-		4496424616F86EF900BA9653 /* CountryParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryParse.h; sourceTree = "<group>"; };
-		4496424716F86EF900BA9653 /* CountryParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryParse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -577,6 +588,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4428ECD916FA965900B2CCE9 /* libz.dylib in Frameworks */,
 				4403725116F6C04600E055DA /* UIKit.framework in Frameworks */,
 				4403725316F6C04600E055DA /* Foundation.framework in Frameworks */,
 				4403725516F6C04600E055DA /* CoreGraphics.framework in Frameworks */,
@@ -606,6 +618,7 @@
 		4403724F16F6C04600E055DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4428ECD816FA965900B2CCE9 /* libz.dylib */,
 				446DE98516F705B900C5D242 /* QuartzCore.framework */,
 				4403725016F6C04600E055DA /* UIKit.framework */,
 				4403725216F6C04600E055DA /* Foundation.framework */,
@@ -617,7 +630,8 @@
 		4403725616F6C04600E055DA /* T2f */ = {
 			isa = PBXGroup;
 			children = (
-				4496424516F86E9000BA9653 /*  Prase */,
+				4428ECCD16FA95B200B2CCE9 /* TBXml */,
+				4496424516F86E9000BA9653 /* Model */,
 				4496402E16F85FB700BA9653 /* image */,
 				4403728816F6C52D00E055DA /* SideBar */,
 				4403725F16F6C04700E055DA /* AppDelegate.h */,
@@ -666,6 +680,19 @@
 				4403727616F6C34C00E055DA /* SideBarSelectedDelegate.h */,
 			);
 			name = SideBar;
+			sourceTree = "<group>";
+		};
+		4428ECCD16FA95B200B2CCE9 /* TBXml */ = {
+			isa = PBXGroup;
+			children = (
+				4428ECCE16FA95B200B2CCE9 /* TBXML+Compression.h */,
+				4428ECCF16FA95B200B2CCE9 /* TBXML+Compression.m */,
+				4428ECD016FA95B200B2CCE9 /* TBXML+HTTP.h */,
+				4428ECD116FA95B200B2CCE9 /* TBXML+HTTP.m */,
+				4428ECD216FA95B200B2CCE9 /* TBXML.h */,
+				4428ECD316FA95B200B2CCE9 /* TBXML.m */,
+			);
+			path = TBXml;
 			sourceTree = "<group>";
 		};
 		4496402E16F85FB700BA9653 /* image */ = {
@@ -1021,13 +1048,13 @@
 			path = "色值";
 			sourceTree = "<group>";
 		};
-		4496424516F86E9000BA9653 /*  Prase */ = {
+		4496424516F86E9000BA9653 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4496424616F86EF900BA9653 /* CountryParse.h */,
-				4496424716F86EF900BA9653 /* CountryParse.m */,
+				4428ECDD16FAA2B300B2CCE9 /* Country.h */,
+				4428ECDE16FAA2B300B2CCE9 /* Country.m */,
 			);
-			name = " Prase";
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1361,7 +1388,10 @@
 				4403728116F6C3EE00E055DA /* RightSideBarViewController.m in Sources */,
 				4403728616F6C48A00E055DA /* FatherViewController.m in Sources */,
 				4496423716F867B700BA9653 /* CountryViewController.m in Sources */,
-				4496424816F86EF900BA9653 /* CountryParse.m in Sources */,
+				4428ECD416FA95B200B2CCE9 /* TBXML+Compression.m in Sources */,
+				4428ECD516FA95B200B2CCE9 /* TBXML+HTTP.m in Sources */,
+				4428ECD616FA95B200B2CCE9 /* TBXML.m in Sources */,
+				4428ECDF16FAA2B300B2CCE9 /* Country.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

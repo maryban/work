@@ -125,10 +125,8 @@
     }else
     {
         UIImageView *img=[[UIImageView alloc] initWithFrame:CGRectMake(220, 7, 30, 30)];
-//        img.tag=102;
         [cell.contentView addSubview:img];
         [img release];
-//        UIImageView *img=(UIImageView *)[cell.contentView viewWithTag:102];
         img.image=[UIImage imageNamed:@"箭头.png"];
         cell.imageView.image=[UIImage imageNamed:[_imgList objectAtIndex:indexPath.row-1]];
         cell.textLabel.text = [_dataList objectAtIndex:indexPath.row-1];

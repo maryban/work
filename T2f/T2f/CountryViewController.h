@@ -10,10 +10,14 @@
 
 @interface CountryViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 {
-    NSArray      *_listArray;
-    UITableView  *table;
-    NSString     *_num;
+    NSMutableArray      *_listArray;
+    
+    UITableView         *table;
+   
+    NSString            *_num;
+    
+    int                 index;
 }
-@property(nonatomic,retain)NSArray      *listArray;
-@property(nonatomic,retain)NSString     *num;
+@property(nonatomic,retain)NSMutableArray      *listArray;
+@property(nonatomic,retain)NSString            *num;
 @end

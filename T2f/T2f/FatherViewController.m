@@ -39,7 +39,6 @@
     [self.view addSubview:countryBtn];
     
     
-    
 //  初始化控件
     UIImageView *imageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 460-50, 320, 50)];
     imageView.image=[UIImage imageNamed:@"menu.png"];    
@@ -83,47 +82,26 @@
 -(void)beginTimer
 {
     timer=[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
-    [self performSelector:@selector(cancelTimer) withObject:nil afterDelay:0.9];
+    [self performSelector:@selector(cancelTimer) withObject:nil afterDelay:1.2];
 }
 //摇晃小图标
 -(void)onTimer
-{
-        flag++;
-    int angle;
-    switch (flag) {
-        case 1:
-           angle= 0;
-            break;
-        case 2:
-           angle=-15;
-            break;
-        case 3:
-           angle= -30;
-        case 4:
-           angle=-15;
-           break;
-        case 5:
-           angle= 0;
-          break;
-        case 6:
-           angle= 15;
-         break;
-        case 7:
-          angle= 30;
-         break;
-        case 8:
-            angle= 15;
-            break;
-        case 9:
-            angle= 0;
-            break;
-        default:
-            break;
-    }
-    if (flag>=9)
+{      
+    static int  flag =0;
+    if (angle<=0&&angle>-30&&flag%12>=0&&flag%12<3)
     {
-        flag=0;
+        angle=angle-10;
     }
+    if (angle>=-30&&angle<30&&flag%12>=3&&flag%12<9)
+    {
+        angle=angle+10;
+    }
+    if (angle>0&&angle<=30&&flag%12>=9&&flag%12<12)
+    {
+        angle=angle-10;
+    }
+    flag++;
+    NSLog(@"angle    shi %d",angle);
     float rad=angle*(M_PI/180.0f);
     CGAffineTransform transform=CGAffineTransformMakeRotation(rad);
     [_moveImage setTransform:transform];

@@ -41,6 +41,7 @@
     imageView.image=[UIImage imageNamed:@"LOGO.png"];
     [self.view addSubview:imageView];
     [imageView release];
+    
     UIScrollView *scrollView=[[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     scrollView.contentSize=CGSizeMake(320, 490);
     scrollView.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.9];
@@ -72,7 +73,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    
     return 1;
 }
 

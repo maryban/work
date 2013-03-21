@@ -7,7 +7,8 @@
 //
 
 #import "CountryViewController.h"
-#import "CountryParse.h"
+#import "TBXML.h"
+#import "Country.h"
 
 @interface CountryViewController ()
 
@@ -49,48 +50,89 @@
     
     
     UIButton *backBtn=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    backBtn.frame=CGRectMake(20, 10, 46, 29);
+    backBtn.frame=CGRectMake(10, 10, 46, 29);
     [backBtn setBackgroundImage:[UIImage imageNamed:@"返回-d.png"] forState:UIControlStateNormal];
     [backBtn setTitle:@"返回" forState:UIControlStateNormal];
-    [backBtn setTitleColor:[UIColor colorWithWhite:0.1 alpha:0.9] forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor colorWithWhite:1 alpha:0.8] forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor colorWithWhite:0.5 alpha:0.8] forState:UIControlStateHighlighted];
     [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backBtn];
     
     table=[[UITableView alloc] initWithFrame:CGRectMake(0, 44, 320, 416)];
     table.delegate=self;
     table.dataSource=self;
-    table.separatorColor=[UIColor colorWithWhite:0.1 alpha:0.85];
+    table.separatorColor=[UIColor colorWithWhite:0.1 alpha:0.9];
     table.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.9];
     [self.view addSubview:table];
-//    从xml中读取数据
     
+    _listArray=[[NSMutableArray alloc] initWithCapacity:0];
+
+//从xml中读取数据
     NSString *Path =[[NSString alloc]initWithString:[[NSBundle mainBundle]pathForResource:@"countries_t2f"ofType:@"xml"]];
     NSData *data = [[NSData alloc]initWithContentsOfFile:Path];
-
-    
 //开始解析
-    [NSThread detachNewThreadSelector:@selector(beginParse:) toTarget:self withObject:data];
+    TBXML *tbXml=[TBXML newTBXMLWithXMLData:data error:Nil];
+    TBXMLElement *root=tbXml.rootXMLElement;
+    if (root)
+    {
+        TBXMLElement *element = tbXml.rootXMLElement;
+        [self recurrence:element];
+    }
+    else
+    {
+        NSLog(@"Format Error!");
+    }
+}
+//递归解析
+- (void)recurrence:(TBXMLElement *)element {
+    
+    do {
+        //迭代处理所有属性
+        TBXMLAttribute * attribute = element->firstAttribute;
+        while (attribute)
+        {
+            index++;
+            Country *c;
+            if (index%3==1)
+            {
+              c=[[Country alloc] init];
+            }
+            //显示
+            if ([[TBXML attributeName:attribute] isEqualToString:@"code"])
+            {
+                c.code=[TBXML attributeValue:attribute];
+            }
+            else if ([[TBXML attributeName:attribute] isEqualToString:@"title"])
+            {
+                c.name=[TBXML attributeValue:attribute];
+            }
+            else if ([[TBXML attributeName:attribute] isEqualToString:@"idd"])
+            {
+                c.idd=[TBXML attributeValue:attribute];
+            }
+            //迭代
+            attribute = attribute->next;
+           //控制添加到数组的逻辑         
+            if (index%3==0)
+            {
+                [self.listArray addObject:c];
+                [c release];
+            }
+        }
+        //递归处理子树
+        if (element->firstChild)
+        {
+            [self recurrence:element->firstChild];
+        }
+        //迭代处理兄弟树
+    } while ((element = element->nextSibling)); 
+}
 
-}
--(void)beginParse:(NSData *)data
-{
-    CountryParse *parse=[[CountryParse alloc] init];
-    [parse startPrase:data];
-    [parse release];
-    [self performSelectorOnMainThread:@selector(showData:) withObject:parse.countryArray waitUntilDone:NO];
-}
-
--(void)showData:(NSArray *)array
-{
-    self.listArray=array;
-    [table reloadData];
-}
 -(void)back
 {
     [self dismissModalViewControllerAnimated:YES];
 }
-
-#pragma mark - TableViewDatasource
+#pragma mark - UITableViewDatasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return  [self.listArray count];
@@ -101,30 +143,34 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (!cell) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    NSDictionary *dic=[self.listArray objectAtIndex:indexPath.row];
-    cell.textLabel.text=[NSString  stringWithFormat:@"%@(+%@)",[dic objectForKey:@"title"],[dic objectForKey:@"idd"]];
+    cell.selectedBackgroundView=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"选中-t.png"]];
+    [cell.selectedBackgroundView autorelease];
+    Country *c=[self.listArray objectAtIndex:indexPath.row];
+    cell.textLabel.text=[NSString  stringWithFormat:@"%@(+%@)",c.name,c.idd];
     cell.textLabel.textColor=[UIColor colorWithWhite:0.5 alpha:0.9];
     cell.textLabel.font=[UIFont systemFontOfSize:14];
     return cell;
 }
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *dic=[self.listArray objectAtIndex:indexPath.row];
-    self.num=[NSString  stringWithFormat:@"%@(+%@)",[dic objectForKey:@"title"],[dic objectForKey:@"idd"]];
+    Country *countryTable=[[self.listArray objectAtIndex:indexPath.row] retain];
+    self.num=[NSString  stringWithFormat:@"%@(+%@)",countryTable.name,countryTable.idd];
     NSLog(@"you  select  num  is  %@",self.num);
     [self dismissModalViewControllerAnimated:YES];
 }
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
-{
-    NSArray *array=[NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"R",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z",nil];
-    return array;
-}
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
-{
-    return 4;
-}
+//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+//{
+//    NSArray *array=[NSArray arrayWithObjects:@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"R",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z",nil];
+//    return array;
+//}
+//- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+//{
+//    if ([title isEqualToString:@"A"])
+//    {
+//        return  1;
+//    }
+//}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

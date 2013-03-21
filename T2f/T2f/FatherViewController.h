@@ -12,7 +12,7 @@
 {
     UIImageView *_moveImage;
     
-    int          flag;
+    int          angle;
     
     BOOL         leftTouched;
     
